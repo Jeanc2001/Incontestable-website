@@ -1,0 +1,9 @@
+Smarty 3 (Bootstrap 4)
+  - maintained up to 2024 (depends on Bootstrap 6 release)
+
+Smarty 4 (never released)
+  - for convenience, Smarty jumped from version 3 to version 5 
+  (to be the same version number as Bootstrap)!
+
+Smarty 5 (Bootstrap 5)
+  - latest version

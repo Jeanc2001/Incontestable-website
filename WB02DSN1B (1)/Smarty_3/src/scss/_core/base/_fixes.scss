@@ -1,0 +1,25 @@
+/**
+
+    Various Fixes
+	
+	This file should be as little as possible!
+	If not, means "fixing own bugs using two files"
+
+	:)
+
+**/
+
+// bootstrap .col
+// required for flex grid to have
+// a perfect width fit
+.col { min-width: 0; }
+
+
+// addEventListener()
+// javascript subelements click issue
+// wrong bind if a button has an icon/svg only
+a > i, a > svg,
+button > i, button > svg,
+.pointer-events-none {
+	pointer-events: none;
+}
