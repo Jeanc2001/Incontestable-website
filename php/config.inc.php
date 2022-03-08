@@ -48,8 +48,8 @@
 		array( 	/* [WILDCARD] OWNER / CEO / etc */
 			'enabled'				=> true,
 			'department'			=> '*',
-			'name'					=> 'John Doe',
-			'email'					=> 'john.doe@mydomain.com'
+			'name'					=> 'Claudel jean',
+			'email'					=> 'Claudeljean.emploi@hotmail.com'
 		),
 
 		/* DEPARTMENTS EXAMPLES (disabled by default) */
