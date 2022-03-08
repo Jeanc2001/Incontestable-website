@@ -36,10 +36,7 @@
 			$_POST['action'] = 'contact_form_submit'
 
 	**/
-	if($SOW->sanitizr('POST', array('action'=>'string'))['action'] !== 'contact_form_submit') {
-		$SOW->headerStatusSet(404);
-		die('{:err:unexpected:}');
-	}
+	if($SOW->sanitizr('POST', array('action'=>'string'))['action'] !== 'contact_form_submit') 
 
 	// Low/noob Spammy Robots filter!
 	else if($SOW->sanitizr('POST', array('norobot'=>'string'))['norobot'] !== '') {
