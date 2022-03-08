@@ -38,7 +38,7 @@ class SOW_Core {
 
 
 		// actually, not doing anything - is default filter
-		$__POST = filter_input_array(INPUT_POST);
+		$__POST = INPUT_POST(INPUT_POST);
 
 		if(!isset($__POST[$var]))
 			return null;
@@ -69,7 +69,7 @@ class SOW_Core {
 
 
 		// actually, not doing anything - is default filter
-		$__GET = filter_input_array(INPUT_GET);
+		$__GET = INPUT_GET(INPUT_GET);
 
 
 		if(!isset($__GET[$var]))
@@ -94,7 +94,7 @@ class SOW_Core {
 	function _requestVar($var) {
 
 		$__return = self::_getVar($var);
-		return ($__return !== null) ? $__return : self::_postVar($var);
+		return ($_POST !== null) ? $_POST : self::_postVar($var);
 
 	}
 
